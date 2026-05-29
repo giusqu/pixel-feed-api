@@ -1,0 +1,3 @@
+ruff
+pytest
+pytest-mock # for light moking without using external tools

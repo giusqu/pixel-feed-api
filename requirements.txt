@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+httpx
+sqlalchemy
+databases[aiosqlite]
+# databases[asyncpg]
+python-dotenv
+pydantic-settings
+python-jose # library to create JWTs
+python-multipart # to receive form data and use FastAPI
+passlib[bcrypt] # to hash the user password
+argon2-cffi # instead of using bcrypt
+aiofiles
+aiosmtplib
+openai
