@@ -40,9 +40,10 @@ like_table = sqlalchemy.Table(
 )
 
 # connect to a specific db
+connect_args = {"check_same_thread": False} if "sqlite" in config.DATABASE_URL else {}
 engine = sqlalchemy.create_engine(
     config.DATABASE_URL,
-    connect_args={"check_same_thread": False},  # for sqlite
+    connect_args=connect_args,  # {"check_same_thread": False},  # for sqlite
 )
 
 # db creation

@@ -2,8 +2,9 @@ fastapi
 uvicorn[standard]
 httpx
 sqlalchemy
+psycopg2
 databases[aiosqlite]
-# databases[asyncpg]
+databases[asyncpg]
 python-dotenv
 pydantic-settings
 python-jose # library to create JWTs
