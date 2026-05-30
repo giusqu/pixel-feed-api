@@ -44,7 +44,7 @@ async def test_create_post_with_prompt(
 ):
     body = "Test Post"
     response = await async_client.post(
-        "/post",
+        "/post?prompt=A lasha apso on the couch",
         json={"body": body},
         headers={"Authorization": f"Bearer {logged_in_token}"},
     )
