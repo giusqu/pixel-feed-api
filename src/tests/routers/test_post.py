@@ -53,7 +53,7 @@ async def test_create_post_with_prompt(
     # assert response.json() == {"id": 1, "body": body}
     assert {"id": 1, "body": body, "image_url": None}.items() <= response.json().items()
 
-    assert mock_generate_cute_creature_api.assert_called()
+    mock_generate_cute_creature_api.assert_called()
 
 
 @pytest.mark.anyio
